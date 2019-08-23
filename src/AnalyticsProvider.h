@@ -2,14 +2,22 @@
 #define ANALYTICSPROVIDER_H
 
 #include <atomic>
+#include <deque>
 #include <memory>
 #include <thread>
 
 // TODO implement an object that stores a cv::Mat and motion metadata
 // class Frame;
+class Frame
+{
+private:
+  cv::Mat raw;
+};
+
 //
 // TODO implement a queue class that stores Frame type above
 // typedef ?? FrameQueue;
+typedef std::deque<Frame> FrameQueue;
 
 class AnalyticsProvider
 {
