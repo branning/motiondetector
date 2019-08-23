@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 project(motiondetector)
 find_package( OpenCV REQUIRED )
 set(MOTIONDETECTOR_SRC
-  src/motiondetector.cpp
+  src/main.cpp
 )
 
 add_executable(motiondetector ${MOTIONDETECTOR_SRC})
